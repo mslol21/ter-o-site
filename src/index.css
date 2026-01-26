@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design System - Terços Católicos E-commerce
+   Inspiração: Espiritualidade, tradição católica, luxo reverente
+*/
+
+@layer base {
+  :root {
+    /* Core Colors - Warm, Sacred Palette */
+    --background: 40 33% 98%;
+    --foreground: 20 20% 15%;
+
+    --card: 40 40% 99%;
+    --card-foreground: 20 20% 15%;
+
+    --popover: 40 40% 99%;
+    --popover-foreground: 20 20% 15%;
+
+    /* Primary - Deep Burgundy (Sacred Wine) */
+    --primary: 345 70% 30%;
+    --primary-foreground: 40 33% 98%;
+
+    /* Secondary - Warm Gold (Divine) */
+    --secondary: 43 74% 49%;
+    --secondary-foreground: 20 20% 15%;
+
+    /* Muted - Soft Warm Gray */
+    --muted: 30 20% 94%;
+    --muted-foreground: 20 10% 45%;
+
+    /* Accent - Rose Gold */
+    --accent: 15 50% 85%;
+    --accent-foreground: 20 20% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 40 33% 98%;
+
+    --border: 30 20% 88%;
+    --input: 30 20% 88%;
+    --ring: 345 70% 30%;
+
+    --radius: 0.5rem;
+
+    /* Extended Palette */
+    --ivory: 40 40% 96%;
+    --cream: 40 33% 93%;
+    --gold: 43 74% 49%;
+    --gold-light: 43 60% 70%;
+    --burgundy: 345 70% 30%;
+    --burgundy-dark: 345 75% 22%;
+    --burgundy-light: 345 50% 45%;
+    --sage: 120 15% 70%;
+    --rose: 350 40% 85%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(40 33% 98%) 0%, hsl(40 40% 94%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(43 74% 49%) 0%, hsl(35 80% 55%) 100%);
+    --gradient-burgundy: linear-gradient(135deg, hsl(345 70% 30%) 0%, hsl(345 75% 22%) 100%);
+    --gradient-sacred: linear-gradient(180deg, hsl(40 33% 98%) 0%, hsl(350 40% 95%) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsla(20, 20%, 15%, 0.08);
+    --shadow-elevated: 0 8px 30px -8px hsla(20, 20%, 15%, 0.12);
+    --shadow-card: 0 2px 12px -2px hsla(20, 20%, 15%, 0.06);
+    --shadow-gold: 0 4px 20px -4px hsla(43, 74%, 49%, 0.25);
+
+    /* Typography */
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Inter', system-ui, sans-serif;
+
+    /* Sidebar (keeping defaults) */
+    --sidebar-background: 40 33% 98%;
+    --sidebar-foreground: 20 20% 15%;
+    --sidebar-primary: 345 70% 30%;
+    --sidebar-primary-foreground: 40 33% 98%;
+    --sidebar-accent: 30 20% 94%;
+    --sidebar-accent-foreground: 20 20% 15%;
+    --sidebar-border: 30 20% 88%;
+    --sidebar-ring: 345 70% 30%;
+  }
+
+  .dark {
+    --background: 20 20% 8%;
+    --foreground: 40 33% 95%;
+
+    --card: 20 18% 12%;
+    --card-foreground: 40 33% 95%;
+
+    --popover: 20 18% 12%;
+    --popover-foreground: 40 33% 95%;
+
+    --primary: 43 74% 55%;
+    --primary-foreground: 20 20% 8%;
+
+    --secondary: 345 50% 40%;
+    --secondary-foreground: 40 33% 95%;
+
+    --muted: 20 15% 18%;
+    --muted-foreground: 30 15% 60%;
+
+    --accent: 345 40% 25%;
+    --accent-foreground: 40 33% 95%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 40 33% 95%;
+
+    --border: 20 15% 20%;
+    --input: 20 15% 20%;
+    --ring: 43 74% 55%;
+
+    --sidebar-background: 20 20% 8%;
+    --sidebar-foreground: 40 33% 95%;
+    --sidebar-primary: 43 74% 55%;
+    --sidebar-primary-foreground: 20 20% 8%;
+    --sidebar-accent: 20 15% 18%;
+    --sidebar-accent-foreground: 40 33% 95%;
+    --sidebar-border: 20 15% 20%;
+    --sidebar-ring: 43 74% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  .container-narrow {
+    @apply max-w-5xl mx-auto px-4 sm:px-6;
+  }
+
+  .text-gradient-gold {
+    background: linear-gradient(135deg, hsl(43 74% 49%) 0%, hsl(35 80% 55%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-sacred {
+    background: var(--gradient-sacred);
+  }
+
+  .shadow-sacred {
+    box-shadow: var(--shadow-elevated);
+  }
+
+  .card-product {
+    @apply bg-card rounded-lg overflow-hidden transition-all duration-300;
+    box-shadow: var(--shadow-card);
+  }
+
+  .card-product:hover {
+    box-shadow: var(--shadow-elevated);
+    transform: translateY(-4px);
+  }
+
+  .btn-gold {
+    background: var(--gradient-gold);
+    @apply text-foreground font-medium px-6 py-3 rounded-md transition-all duration-300;
+    box-shadow: var(--shadow-gold);
+  }
+
+  .btn-gold:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px -4px hsla(43, 74%, 49%, 0.35);
+  }
+
+  .divider-ornate {
+    @apply flex items-center justify-center gap-4 my-8;
+  }
+
+  .divider-ornate::before,
+  .divider-ornate::after {
+    content: '';
+    @apply h-px flex-1 bg-gradient-to-r from-transparent via-border to-transparent;
+  }
+
+  /* Animations */
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.6s ease-out forwards;
+  }
+
+  .animate-shimmer {
+    background: linear-gradient(90deg, transparent, hsla(43, 74%, 49%, 0.1), transparent);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  /* Delayed animations */
+  .delay-100 { animation-delay: 100ms; }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-300 { animation-delay: 300ms; }
+  .delay-400 { animation-delay: 400ms; }
+}
+
+@layer utilities {
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .font-sans {
+    font-family: var(--font-sans);
+  }
+}
