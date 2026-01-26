@@ -47,8 +47,8 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/agenda" className="text-background/70 hover:text-secondary transition-colors text-sm">
-                  Agenda Litúrgica
+                <Link to="/liturgia" className="text-background/70 hover:text-secondary transition-colors text-sm">
+                  Liturgia Diária
                 </Link>
               </li>
               <li>

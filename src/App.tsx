@@ -15,7 +15,7 @@ import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import OrderSuccess from "./pages/OrderSuccess";
 import Login from "./pages/Login";
-import LiturgicalAgenda from "./pages/LiturgicalAgenda";
+import Liturgia from "./pages/Liturgia";
 import NotFound from "./pages/NotFound";
 
 import { CartProvider } from "./hooks/use-cart";
@@ -50,7 +50,7 @@ const App = () => (
                 } 
               />
               <Route path="/carrinho" element={<Cart />} />
-              <Route path="/agenda" element={<LiturgicalAgenda />} />
+              <Route path="/liturgia" element={<Liturgia />} />
               <Route path="/checkout" element={<Checkout />} />
               <Route path="/pedido-concluido" element={<OrderSuccess />} />
               <Route path="*" element={<NotFound />} />

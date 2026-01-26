@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Calendar as CalendarIcon, BookOpen, Quote, Shield, Heart } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
-const LiturgicalAgenda = () => {
+const Liturgia = () => {
   // Dados baseados na data atual (26/01/2026)
   const today = {
     date: "26/01/2026",
@@ -26,7 +26,7 @@ const LiturgicalAgenda = () => {
   return (
     <Layout>
       <div className="container py-8 max-w-4xl">
-        <BreadcrumbNav items={[{ label: "Agenda Litúrgica" }]} />
+        <BreadcrumbNav items={[{ label: "Liturgia Diária" }]} />
 
         <div className="mt-8 space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
           {/* Header da Agenda */}
@@ -141,4 +141,4 @@ const LiturgicalAgenda = () => {
   );
 };
 
-export default LiturgicalAgenda;
+export default Liturgia;
