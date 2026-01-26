@@ -24,9 +24,9 @@ export function Header() {
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b border-border">
       <nav className="container flex items-center justify-between py-4" aria-label="Global">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-full bg-primary overflow-hidden flex items-center justify-center">
-            <img src="/logo.png" alt="Faith Beads Logo" className="w-full h-full object-cover invert" />
+        <Link to="/" className="flex items-center gap-2 group">
+          <div className="w-11 h-11 rounded-full bg-white border-2 border-primary overflow-hidden flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
+            <img src="/logo.png" alt="Faith Beads Logo" className="w-full h-full object-contain p-1" />
           </div>
           <div className="flex flex-col">
             <span className="font-serif text-xl font-semibold text-foreground">Terços de Fé</span>

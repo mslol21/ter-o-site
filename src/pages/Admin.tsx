@@ -200,11 +200,11 @@ const Admin = () => {
       {/* Header */}
       <header className="bg-white border-b border-slate-200 sticky top-0 z-30">
         <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="bg-primary/10 w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center">
-              <img src="/logo.png" alt="Admin Logo" className="w-full h-full object-cover" />
+          <div className="flex items-center gap-3">
+            <div className="bg-white border border-slate-200 w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center shadow-sm">
+              <img src="/logo.png" alt="Admin Logo" className="w-full h-full object-contain p-0.5" />
             </div>
-            <h1 className="font-bold text-xl tracking-tight text-slate-900">Faith Beads <span className="text-primary">Admin</span></h1>
+            <h1 className="font-bold text-xl tracking-tight text-slate-900">Faith Beads <span className="text-primary font-serif italic">Admin</span></h1>
           </div>
           <div className="flex items-center gap-4">
             <Button variant="outline" size="sm" asChild>
