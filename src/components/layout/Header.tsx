@@ -25,8 +25,8 @@ export function Header() {
       <nav className="container flex items-center justify-between py-4" aria-label="Global">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-            <span className="text-primary-foreground font-serif text-xl">✝</span>
+          <div className="w-10 h-10 rounded-full bg-primary overflow-hidden flex items-center justify-center">
+            <img src="/logo.png" alt="Faith Beads Logo" className="w-full h-full object-cover invert" />
           </div>
           <div className="flex flex-col">
             <span className="font-serif text-xl font-semibold text-foreground">Terços de Fé</span>

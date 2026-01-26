@@ -201,8 +201,8 @@ const Admin = () => {
       <header className="bg-white border-b border-slate-200 sticky top-0 z-30">
         <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="bg-primary/10 p-2 rounded-lg">
-              <TrendingUp className="w-6 h-6 text-primary" />
+            <div className="bg-primary/10 w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center">
+              <img src="/logo.png" alt="Admin Logo" className="w-full h-full object-cover" />
             </div>
             <h1 className="font-bold text-xl tracking-tight text-slate-900">Faith Beads <span className="text-primary">Admin</span></h1>
           </div>
