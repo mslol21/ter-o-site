@@ -9,15 +9,14 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="space-y-4">
-            <Link to="/" className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center">
-                <span className="text-secondary-foreground font-serif text-xl">✝</span>
+            <Link to="/" className="flex items-center gap-3">
+              <div className="w-12 h-12 rounded-full border border-secondary/30 overflow-hidden flex items-center justify-center bg-primary/20">
+                <img src="/logo-entresantos.jpg" alt="ENTRESANTOS" className="w-full h-full object-cover" />
               </div>
-              <span className="font-serif text-xl font-semibold">Terços de Fé</span>
+              <span className="font-serif text-2xl font-bold tracking-tight text-gold">ENTRESANTOS</span>
             </Link>
-            <p className="text-background/70 text-sm leading-relaxed">
-              Levando fé e devoção através de terços artesanais de alta qualidade. 
-              Cada terço é feito com amor e abençoado para sua jornada espiritual.
+            <p className="text-background/70 text-sm leading-relaxed max-w-xs">
+              Juntos no caminho da santidade. Oferecemos artigos religiosos que auxiliam na sua jornada espiritual e fortalecem sua fé diária.
             </p>
             <div className="flex gap-3">
               <a href="#" className="w-10 h-10 rounded-full bg-background/10 hover:bg-secondary hover:text-secondary-foreground flex items-center justify-center transition-colors">
@@ -127,7 +126,7 @@ export function Footer() {
       <div className="border-t border-background/10">
         <div className="container py-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-background/50 text-sm">
-            © 2024 Terços de Fé. Todos os direitos reservados.
+            © 2024 ENTRESANTOS. Todos os direitos reservados.
           </p>
           <p className="text-background/50 text-sm">
             Feito com ❤️ e muita fé

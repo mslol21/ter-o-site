@@ -25,12 +25,12 @@ export function Header() {
       <nav className="container flex items-center justify-between py-4" aria-label="Global">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 group">
-          <div className="w-11 h-11 rounded-full bg-white border-2 border-primary overflow-hidden flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
-            <img src="/logo.png" alt="Faith Beads Logo" className="w-full h-full object-contain p-1" />
+          <div className="w-12 h-12 rounded-full border-2 border-secondary overflow-hidden flex items-center justify-center shadow-gold group-hover:scale-105 transition-transform bg-primary">
+            <img src="/logo-entresantos.jpg" alt="ENTRESANTOS Logo" className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col">
-            <span className="font-serif text-xl font-semibold text-foreground">Terços de Fé</span>
-            <span className="text-xs text-muted-foreground -mt-1">Artigos Religiosos</span>
+            <span className="font-serif text-xl font-bold tracking-tight text-foreground">ENTRESANTOS</span>
+            <span className="text-[10px] uppercase tracking-widest text-secondary font-medium -mt-1">Juntos no caminho da santidade</span>
           </div>
         </Link>
 

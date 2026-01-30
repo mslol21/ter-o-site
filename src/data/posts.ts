@@ -72,7 +72,7 @@ Conclua com a Salve Rainha e as orações finais.
 Que Nossa Senhora te abençoe nesta jornada de oração!
     `,
     image: "/placeholder.svg",
-    author: "Comunidade Terços de Fé",
+    author: "ENTRESANTOS",
     publishedAt: "2024-01-15",
     category: "Guias de Oração",
     readTime: 8,
@@ -113,7 +113,7 @@ Rezar o terço é:
 O Papa João Paulo II dizia que o Rosário é sua oração predileta, uma oração maravilhosa na sua simplicidade e profundidade.
     `,
     image: "/placeholder.svg",
-    author: "Comunidade Terços de Fé",
+    author: "ENTRESANTOS",
     publishedAt: "2024-01-10",
     category: "Espiritualidade",
     readTime: 6,
@@ -151,7 +151,7 @@ Diversos papas promoveram o Rosário:
 Milhões de católicos em todo o mundo rezam o terço diariamente, mantendo viva esta tradição de mais de 800 anos.
     `,
     image: "/placeholder.svg",
-    author: "Comunidade Terços de Fé",
+    author: "ENTRESANTOS",
     publishedAt: "2024-01-05",
     category: "História",
     readTime: 7,
@@ -195,7 +195,7 @@ O melhor terço é aquele que te convida a rezar. Não precisa ser caro ou elabo
 Lembre-se: o valor do terço está na oração, não no material.
     `,
     image: "/placeholder.svg",
-    author: "Comunidade Terços de Fé",
+    author: "ENTRESANTOS",
     publishedAt: "2024-01-01",
     category: "Guias",
     readTime: 5,
@@ -247,7 +247,7 @@ A Virgem Maria fez 15 promessas a quem reza o Rosário devotamente:
 Comece hoje sua jornada com o Santo Terço!
     `,
     image: "/placeholder.svg",
-    author: "Comunidade Terços de Fé",
+    author: "ENTRESANTOS",
     publishedAt: "2023-12-28",
     category: "Espiritualidade",
     readTime: 6,

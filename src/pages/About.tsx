@@ -37,7 +37,7 @@ const About = () => {
               Sobre Nós
             </h1>
             <p className="text-muted-foreground mt-3">
-              Conheça a história e os valores que guiam a Terços de Fé.
+              Conheça a história e os valores que guiam a ENTRESANTOS.
             </p>
           </div>
         </div>
@@ -59,9 +59,9 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  A Terços de Fé nasceu do desejo de levar terços de qualidade para 
-                  todos os católicos que buscam fortalecer sua vida de oração. Somos 
-                  uma empresa familiar, fundada por pessoas que vivem a fé no dia a dia.
+                  A ENTRESANTOS nasceu do desejo de levar artigos religiosos de alta 
+                  qualidade para todos os católicos que buscam fortalecer sua vida de 
+                  oração. Somos uma empresa familiar, fundada por pessoas que vivem a fé no dia a dia.
                 </p>
                 <p>
                   Cada terço que produzimos passa por mãos dedicadas e recebe nossa 
